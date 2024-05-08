@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="colors" style="width: 100vw;height: 100vh;color: rgb(211, 212, 212);">
+    <button onclick="demo()"><b>CLICK ME TO CHANGE COLOUR</b></button>
+    <script>
+        function demo(){
+            let colors=document.getElementsByTagName("div")[0];
+            let btn=document.getElementsByTagName("button")[0];
+            let obj=["lightgreen","blue","green","orange","aqua","gold","cadetblue","coral","deeppink"]
+            colors.style.backgroundColor=obj[Math.floor(Math.random()*10)];
+            // btn.style.backgroundColor=obj[Math.floor(Math.random()*10)];
+            btn.style.color=obj[Math.floor(Math.random()*10)];
+        }
+        let btn=document.getElementsByTagName("button")[0];
+        btn.style.backgroundColor="rgb(211, 212, 212)";
+        btn.style.border="none"
+        btn.style.width="300px";
+        btn.style.height="50px";
+        btn.style.borderRadius="5px"
+        colors.style.display="flex";
+        colors.style.justifyContent="center";
+        colors.style.alignItems="center";
+    </script>
+</div> 
+</body>
+</html>
